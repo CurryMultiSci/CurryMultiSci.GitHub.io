@@ -1,4 +1,4 @@
-console.log('%cCopyright © 2024 zyyo.net',
+console.log('%cCopyright © 2024 currymultisci.github.io',
     'background-color: #ff00ff; color: white; font-size: 24px; font-weight: bold; padding: 10px;'
 );
 console.log('%c   /\\_/\\', 'color: #8B4513; font-size: 20px;');
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    var pageLoading = document.querySelector("#zyyo-loading");
+    var pageLoading = document.querySelector("#wayne-loading");
     setTimeout(function () {
         pageLoading.style.opacity = '0';
 
