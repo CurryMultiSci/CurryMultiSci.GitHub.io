@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function changeTheme(theme) {
 
-        tanChiShe.src = "/static/svg/snake-" + theme + ".svg";
+        //tanChiShe.src = "/static/svg/snake-" + theme + ".svg";
         //切换贪吃蛇
         html.dataset.theme = theme;
         //设置css变量主题
