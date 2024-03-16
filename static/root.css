@@ -133,7 +133,7 @@ html {
 html {
     /*图片模糊背景＋黑色透明卡片+白色svg**/
     --svgcolor: #ffffff;
-    --main-bg-color: url(/static/img/background.jpg);
+    --main-bg-color: url(/static/img/background.png);
     --main-text-color: #eeeeee;
     --gradient-start: #bd34fe;
     --gradient-middle: #e0321b;
