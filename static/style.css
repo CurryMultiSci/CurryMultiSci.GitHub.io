@@ -115,7 +115,7 @@ body {
 
 }
 
-#Wayne-loading {
+#wayne-loading {
     background: radial-gradient(white, #d8eaff);
     background-size: 100%;
     background-position: center;
@@ -135,7 +135,7 @@ body {
 
 
 
-#Wayne-loading-center {
+#wayne-loading-center {
     height: 150px;
     width: 150px;
     position: relative;
@@ -164,7 +164,7 @@ body {
 
 
 
-.Wayne-filter {
+.wayne-filter {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -174,7 +174,7 @@ body {
     background: var(--back-filter-color);
 }
 
-.Wayne-main {
+.wayne-main {
 
     width: 100%;
     transition: transform 0.5s ease;
@@ -183,7 +183,7 @@ body {
     flex-direction: row;
 }
 
-.Wayne-left {
+.wayne-left {
     overflow-y: scroll;
     width: 230px;
     height: 100vh;
@@ -195,7 +195,7 @@ body {
 }
 
 
-.Wayne-left::-webkit-scrollbar {
+.wayne-left::-webkit-scrollbar {
     display: none;
 }
 
@@ -301,7 +301,7 @@ body {
 
 
 
-.Wayne-right {
+.wayne-right {
     width: calc(100% - 230px);
     display: flex;
     padding: 20px;
@@ -629,7 +629,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .Wayne-left {
+    .wayne-left {
         display: none;
     }
 
@@ -667,7 +667,7 @@ footer {
 
 
 
-    .Wayne-right {
+    .wayne-right {
         width: 100%;
     }
 
