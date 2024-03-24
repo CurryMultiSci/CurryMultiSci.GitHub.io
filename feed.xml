@@ -3,31 +3,10 @@
     <title>WayneCheung Home</title>
     <link href="https://currymultisci.github.io/feed.xml" rel="self" />
     <link href="https://currymultisci.github.io" />
-    <updated>2024-03-24T17:30:01+08:00</updated>
+    <updated>1970-01-01T08:00:00+08:00</updated>
     <author>
         <name>WayneCheung</name>
     </author>
     <id>https://currymultisci.github.io</id>
 
-    <entry>
-        <title>This is the first blog</title>
-        <author>
-            <name>WayneCheung</name>
-        </author>
-        <link href="https://currymultisci.github.io/this-is-the-first-blog.html"/>
-        <id>https://currymultisci.github.io/this-is-the-first-blog.html</id>
-
-        <updated>2024-03-24T17:30:01+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Weather it’s a nice day!
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h1 id="weather">Weather</h1>
-<p>it’s a nice day!</p>
-            ]]>
-        </content>
-    </entry>
 </feed>
