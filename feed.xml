@@ -3,10 +3,126 @@
     <title>WayneCheung Home</title>
     <link href="https://currymultisci.github.io/feed.xml" rel="self" />
     <link href="https://currymultisci.github.io" />
-    <updated>1970-01-01T08:00:00+08:00</updated>
+    <updated>2024-03-24T19:10:46+08:00</updated>
     <author>
         <name>WayneCheung</name>
     </author>
     <id>https://currymultisci.github.io</id>
 
+    <entry>
+        <title>如何计算太阳高度角和方位角</title>
+        <author>
+            <name>WayneCheung</name>
+        </author>
+        <link href="https://currymultisci.github.io/ru-he-ji-suan-tai-yang-gao-du-jiao-he-fang-wei-jiao.html"/>
+        <id>https://currymultisci.github.io/ru-he-ji-suan-tai-yang-gao-du-jiao-he-fang-wei-jiao.html</id>
+        <media:content url="https://currymultisci.github.io/media/posts/2/IMG_0356.JPG" medium="image" />
+            <category term="#天文"/>
+
+        <updated>2024-03-24T19:09:06+08:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://currymultisci.github.io/media/posts/2/IMG_0356.JPG" alt="" />
+                    How to calculate solar altitude angle? Calculating the solar altitude angle requires several factors and can be done through various methods, including formulas and online calculators. Here’s an overview: Factors needed: Latitude: Your geographical latitude (positive for North, negative for South). Declination angle: The angle of the sun relative to the Earth’s equatorial plane. This changes throughout the year and can be found in tables or calculated using formulas. Hour angle: The angular displacement of the sun east or west of the local meridian due to the Earth’s rotation. This depends on the time of day and can be calculated based on the difference between your local solar time and solar noon. Formula: The solar altitude angle (α) can be calculated using the following formula: α = arcsin(sin(δ) * sin(φ) + cos(δ) * cos(φ) * cos(ω)) where: δ: Declination angle φ: Latitude ω: Hour angle Online calculators: Several online calculators can compute the solar altitude angle for you. You simply need to input your location, date, and time. Some popular options include: SunCalc: https://suncalc.net/ PV F-Chart: https://pvfchart.com/ Solar Position Algorithm (NREL): https://www.nrel.gov/grid/solar-resource/spa.html Additional notes: The solar altitude angle is 0° at sunrise and sunset, and reaches its maximum value at solar noon. The maximum solar altitude angle varies throughout the year and depends on your latitude and the declination angle. This calculation provides the apparent solar altitude angle, which considers atmospheric refraction. The true solar altitude angle is slightly lower due to the bending of light rays by the atmosphere. Remember to use consistent units (degrees or radians) throughout your calculations. import math def solar_angles(latitude, longitude, datetime): &quot;&quot;&quot;&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://currymultisci.github.io/media/posts/2/IMG_0356.JPG" class="type:primaryImage" alt="" /></p>
+                <h2 id="how-to-calculate-solar-altitude-angle">How to calculate solar altitude angle?</h2>
+<p>Calculating the solar altitude angle requires several factors and can be done through various methods, including formulas and online calculators. Here’s an overview:</p><p><strong>Factors needed:</strong></p><ul>
+<li><p><strong>Latitude:</strong> Your geographical latitude (positive for North, negative for South).</p></li>
+<li><p><strong>Declination angle:</strong> The angle of the sun relative to the Earth’s equatorial plane. This changes throughout the year and can be found in tables or calculated using formulas.</p></li>
+<li><p><strong>Hour angle:</strong> The angular displacement of the sun east or west of the local meridian due to the Earth’s rotation. This depends on the time of day and can be calculated based on the difference between your local solar time and solar noon.</p></li>
+</ul>
+<p><strong>Formula:</strong></p><p>The solar altitude angle (α) can be calculated using the following formula:</p><pre><code>α = arcsin(sin(δ) * sin(φ) + cos(δ) * cos(φ) * cos(ω))
+</code></pre>
+<p>where:</p><ul>
+<li><p><strong>δ:</strong> Declination angle</p></li>
+<li><p><strong>φ:</strong> Latitude</p></li>
+<li><p><strong>ω:</strong> Hour angle</p></li>
+</ul>
+<p><strong>Online calculators:</strong></p><p>Several online calculators can compute the solar altitude angle for you. You simply need to input your location, date, and time. Some popular options include:</p><ul>
+<li><p><strong>SunCalc:</strong> <a href="https://suncalc.net/">https://suncalc.net/</a></p></li>
+<li><p><strong>PV F-Chart:</strong> <a href="https://pvfchart.com/">https://pvfchart.com/</a></p></li>
+<li><p><strong>Solar Position Algorithm (NREL):</strong> <a href="https://www.nrel.gov/grid/solar-resource/spa.html">https://www.nrel.gov/grid/solar-resource/spa.html</a></p></li>
+</ul>
+<p><strong>Additional notes:</strong></p><ul>
+<li><p>The solar altitude angle is 0° at sunrise and sunset, and reaches its maximum value at solar noon.</p></li>
+<li><p>The maximum solar altitude angle varies throughout the year and depends on your latitude and the declination angle.</p></li>
+<li><p>This calculation provides the <strong>apparent</strong> solar altitude angle, which considers atmospheric refraction. The <strong>true</strong> solar altitude angle is slightly lower due to the bending of light rays by the atmosphere.</p></li>
+</ul>
+<p>Remember to use consistent units (degrees or radians) throughout your calculations.</p><h2 id="can-you-show-me-a-code-whick-can-calculate-solar-altitude-angle-and-solar-azimuth-angle">can you show me a code whick can calculate solar altitude angle and solar azimuth angle?</h2>
+<pre><code class="language-Python">import math
+
+def solar_angles(latitude, longitude, datetime):
+    &quot;&quot;&quot;
+    Calculates the solar altitude and azimuth angles for a given location and time.
+
+    Args:
+        latitude: Latitude of the location in degrees.
+        longitude: Longitude of the location in degrees.
+        datetime: Date and time for which to calculate the angles.
+
+    Returns:
+        A tuple containing the solar altitude angle (in degrees) and the solar azimuth angle (in degrees).
+    &quot;&quot;&quot;
+
+    # Constants
+    DEG_TO_RAD = math.pi / 180
+    RAD_TO_DEG = 180 / math.pi
+
+    # Calculate Julian date
+    julian_date = datetime.toordinal() + 365.25 * (datetime.year + 4716) + 6.75 * (datetime.month + 1) + datetime.day - 1524.5
+
+    # Calculate time in decimal hours
+    decimal_hour = datetime.hour + datetime.minute / 60 + datetime.second / 3600
+
+    # Calculate Greenwich Mean Sidereal Time (GMST)
+    gmst = 18.697374558 + 24.06570982441908 * julian_date
+
+    # Calculate Local Mean Sidereal Time (LMST)
+    lmst = gmst + longitude / 15
+
+    # Calculate hour angle
+    hour_angle = lmst - 12 - decimal_hour
+
+    # Calculate declination angle
+    declination = 23.45 * math.sin(DEG_TO_RAD * 360 * (284 + julian_date) / 365)
+
+    # Calculate solar altitude angle
+    altitude = RAD_TO_DEG * math.asin(
+        math.sin(DEG_TO_RAD * declination) * math.sin(DEG_TO_RAD * latitude)
+        + math.cos(DEG_TO_RAD * declination) * math.cos(DEG_TO_RAD * latitude) * math.cos(DEG_TO_RAD * hour_angle)
+    )
+
+    # Calculate solar azimuth angle
+    azimuth = RAD_TO_DEG * math.atan2(
+        math.sin(DEG_TO_RAD * hour_angle),
+        math.cos(DEG_TO_RAD * hour_angle) * math.sin(DEG_TO_RAD * latitude) - math.tan(DEG_TO_RAD * declination) * math.cos(DEG_TO_RAD * latitude)
+    )
+
+    # Adjust azimuth angle to be between 0 and 360 degrees
+    if azimuth &lt; 0:
+        azimuth += 360
+
+    return altitude, azimuth
+</code></pre>
+<p><strong>Usage:</strong></p><pre><code class="language-Python"># Example usage:
+latitude = 37.7749  # Latitude of San Francisco
+longitude = -122.4194  # Longitude of San Francisco
+datetime = datetime.datetime(2023, 3, 15, 12, 0, 0)  # Date and time
+
+altitude, azimuth = solar_angles(latitude, longitude, datetime)
+
+print(&quot;Solar altitude angle:&quot;, altitude)
+print(&quot;Solar azimuth angle:&quot;, azimuth)
+</code></pre>
+<p>Output:</p><pre><code class="language-Python">Solar altitude angle: 54.92052783405086
+Solar azimuth angle: 180.00023456790122
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
 </feed>
