@@ -1,1 +1,0 @@
-Hello, I'am Wayne Cheung from Hong Kong.

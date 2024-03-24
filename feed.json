@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "WayneCheung Home",
+    "description": "",
+    "home_page_url": "https://currymultisci.github.io",
+    "feed_url": "https://currymultisci.github.io/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "WayneCheung"
+    },
+    "items": [
+        {
+            "id": "https://currymultisci.github.io/this-is-the-first-blog.html",
+            "url": "https://currymultisci.github.io/this-is-the-first-blog.html",
+            "title": "This is the first blog",
+            "summary": "Weather it’s a nice day!",
+            "content_html": "<h1 id=\"weather\">Weather</h1>\n<p>it’s a nice day!</p>",
+            "author": {
+                "name": "WayneCheung"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-03-24T17:30:01+08:00",
+            "date_modified": "2024-03-24T17:30:01+08:00"
+        }
+    ]
+}
