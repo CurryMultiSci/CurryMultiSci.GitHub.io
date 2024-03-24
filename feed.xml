@@ -3,7 +3,7 @@
     <title>WayneCheung Home</title>
     <link href="https://currymultisci.github.io/feed.xml" rel="self" />
     <link href="https://currymultisci.github.io" />
-    <updated>2024-03-24T19:18:23+08:00</updated>
+    <updated>2024-03-24T19:19:37+08:00</updated>
     <author>
         <name>WayneCheung</name>
     </author>
@@ -118,7 +118,7 @@ altitude, azimuth = solar_angles(latitude, longitude, datetime)
 print(&quot;Solar altitude angle:&quot;, altitude)
 print(&quot;Solar azimuth angle:&quot;, azimuth)
 </code></pre>
-<p>Output:</p><pre><code class="language-Python">Solar altitude angle: 54.92052783405086
+<p><strong>Output:</strong></p><pre><code class="language-Python">Solar altitude angle: 54.92052783405086
 Solar azimuth angle: 180.00023456790122
 </code></pre>
 
