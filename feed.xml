@@ -3,7 +3,7 @@
     <title>WayneCheung Home</title>
     <link href="https://currymultisci.github.io/feed.xml" rel="self" />
     <link href="https://currymultisci.github.io" />
-    <updated>2024-03-24T19:10:46+08:00</updated>
+    <updated>2024-03-24T19:18:23+08:00</updated>
     <author>
         <name>WayneCheung</name>
     </author>
@@ -23,13 +23,13 @@
             <summary>
                 <![CDATA[
                         <img src="https://currymultisci.github.io/media/posts/2/IMG_0356.JPG" alt="" />
-                    How to calculate solar altitude angle? Calculating the solar altitude angle requires several factors and can be done through various methods, including formulas and online calculators. Here’s an overview: Factors needed: Latitude: Your geographical latitude (positive for North, negative for South). Declination angle: The angle of the sun relative to the Earth’s equatorial plane. This changes throughout the year and can be found in tables or calculated using formulas. Hour angle: The angular displacement of the sun east or west of the local meridian due to the Earth’s rotation. This depends on the time of day and can be calculated based on the difference between your local solar time and solar noon. Formula: The solar altitude angle (α) can be calculated using the following formula: α = arcsin(sin(δ) * sin(φ) + cos(δ) * cos(φ) * cos(ω)) where: δ: Declination angle φ: Latitude ω: Hour angle Online calculators: Several online calculators can compute the solar altitude angle for you. You simply need to input your location, date, and time. Some popular options include: SunCalc: https://suncalc.net/ PV F-Chart: https://pvfchart.com/ Solar Position Algorithm (NREL): https://www.nrel.gov/grid/solar-resource/spa.html Additional notes: The solar altitude angle is 0° at sunrise and sunset, and reaches its maximum value at solar noon. The maximum solar altitude angle varies throughout the year and depends on your latitude and the declination angle. This calculation provides the apparent solar altitude angle, which considers atmospheric refraction. The true solar altitude angle is slightly lower due to the bending of light rays by the atmosphere. Remember to use consistent units (degrees or radians) throughout your calculations. import math def solar_angles(latitude, longitude, datetime): &quot;&quot;&quot;&hellip;
+                    How to calculate solar altitude angle and solar azimuth angle? Calculating the solar altitude angle requires several factors and can be done through various methods, including formulas and online calculators. Here’s an overview: Factors needed: Latitude: Your geographical latitude (positive for North, negative for South). Declination angle: The angle of the sun relative to the Earth’s equatorial plane. This changes throughout the year and can be found in tables or calculated using formulas. Hour angle: The angular displacement of the sun east or west of the local meridian due to the Earth’s rotation. This depends on the time of day and can be calculated based on the difference between your local solar time and solar noon. Formula: The solar altitude angle (α) can be calculated using the following formula: α = arcsin(sin(δ) * sin(φ) + cos(δ) * cos(φ) * cos(ω)) where: δ: Declination angle φ: Latitude ω: Hour angle Online calculators: Several online calculators can compute the solar altitude angle for you. You simply need to input your location, date, and time. Some popular options include: SunCalc: https://suncalc.net/ PV F-Chart: https://pvfchart.com/ Solar Position Algorithm (NREL): https://www.nrel.gov/grid/solar-resource/spa.html Additional notes: The solar altitude angle is 0° at sunrise and sunset, and reaches its maximum value at solar noon. The maximum solar altitude angle varies throughout the year and depends on your latitude and the declination angle. This calculation provides the apparent solar altitude angle, which considers atmospheric refraction. The true solar altitude angle is slightly lower due to the bending of light rays by the atmosphere. Remember to use consistent units (degrees or radians) throughout your calculations. import math def solar_angles(latitude,&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://currymultisci.github.io/media/posts/2/IMG_0356.JPG" class="type:primaryImage" alt="" /></p>
-                <h2 id="how-to-calculate-solar-altitude-angle">How to calculate solar altitude angle?</h2>
+                <h2 id="how-to-calculate-solar-altitude-angle-and-solar-azimuth-angle">How to calculate solar altitude angle and solar azimuth angle?</h2>
 <p>Calculating the solar altitude angle requires several factors and can be done through various methods, including formulas and online calculators. Here’s an overview:</p><p><strong>Factors needed:</strong></p><ul>
 <li><p><strong>Latitude:</strong> Your geographical latitude (positive for North, negative for South).</p></li>
 <li><p><strong>Declination angle:</strong> The angle of the sun relative to the Earth’s equatorial plane. This changes throughout the year and can be found in tables or calculated using formulas.</p></li>
@@ -52,7 +52,7 @@
 <li><p>The maximum solar altitude angle varies throughout the year and depends on your latitude and the declination angle.</p></li>
 <li><p>This calculation provides the <strong>apparent</strong> solar altitude angle, which considers atmospheric refraction. The <strong>true</strong> solar altitude angle is slightly lower due to the bending of light rays by the atmosphere.</p></li>
 </ul>
-<p>Remember to use consistent units (degrees or radians) throughout your calculations.</p><h2 id="can-you-show-me-a-code-whick-can-calculate-solar-altitude-angle-and-solar-azimuth-angle">can you show me a code whick can calculate solar altitude angle and solar azimuth angle?</h2>
+<p>Remember to use consistent units (degrees or radians) throughout your calculations.</p><h2 id="sample-code">Sample code</h2>
 <pre><code class="language-Python">import math
 
 def solar_angles(latitude, longitude, datetime):
